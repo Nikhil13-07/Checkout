@@ -11,5 +11,10 @@ pileline{
           sh "mvn clean"
        }    
      }
+     stage(clean){
+       	steps{
+          sh "mvn install"
+       }    
+     }
 }
 }
