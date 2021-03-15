@@ -3,7 +3,7 @@ pipeline{
      stages{
        stage(git_checkout){
        	steps{
-		echo 'feature123'
+		echo 'feature1234'
           git  'https://github.com/Nikhil13-07/Checkout.git'
        }    
      }
