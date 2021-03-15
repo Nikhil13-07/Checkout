@@ -3,12 +3,13 @@ pipeline{
      stages{
        stage(git_checkout){
        	steps{
+		echo 'master'	
           git  'https://github.com/Nikhil13-07/Checkout.git'
        }    
      }
 	   stage(clean){
        	steps{
-		echo 'hi  helo hi'
+
           sh "mvn clean "
        }    
      }
